@@ -16,30 +16,6 @@ interface FoodNode {
   children?: FoodNode[];
   chapter_codes?: any;
 }
-// const TEST_DATA = require('./data.json');
-// const TREE_DATA: FoodNode[] = [
-//   {
-//     name: 'Fruit',
-//     children: [
-//       { name: 'Apple', children: [] },
-//       { name: 'Banana' },
-//       { name: 'Fruit loops' },
-//     ],
-//   },
-//   {
-//     name: 'Vegetables',
-//     children: [
-//       {
-//         name: 'Green',
-//         children: [{ name: 'Broccoli' }, { name: 'Brussels sprouts' }],
-//       },
-//       {
-//         name: 'Orange',
-//         children: [{ name: 'Pumpkins' }, { name: 'Carrots' }],
-//       },
-//     ],
-//   },
-// ];
 
 /** Flat node with expandable and level information */
 interface ExampleFlatNode {

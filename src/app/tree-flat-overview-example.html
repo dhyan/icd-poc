@@ -3,7 +3,9 @@
   <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
     <!-- use a disabled button to provide padding for tree leaf -->
     <button mat-icon-button disabled></button>
-    {{node.name}}
+    <mat-checkbox class="checklist-leaf-node"
+                  [checked]=''
+                  >{{node.name}}</mat-checkbox>
   </mat-tree-node>
   <!-- This is the tree node template for expandable nodes -->
   <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
@@ -13,7 +15,9 @@
         {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
       </mat-icon>
     </button>
-    {{node.name}}
+    <mat-checkbox class="checklist-leaf-node"
+                  [checked]= ''
+                  >{{node.name}}</mat-checkbox>
   </mat-tree-node>
 </mat-tree>
 
